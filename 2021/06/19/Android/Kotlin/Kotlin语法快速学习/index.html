@@ -20,30 +20,34 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="别走那么快，这样会错过沿途的风景的！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Damon-Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="基础入门基本类型： 数字 Byte Short Int Long Float Double   字符 Char   布尔 Boolean   数组 Array   字符串 String     1，每个数字类型都支持toXXX()转换 2，Int 与 Long才拥有位运算：shl(有符号左移) shr(有符号右移) ushr(无符号右移) and(位与) or(位或) xor(位异或) inv(位">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kotlin-语法快速学习">
+<meta property="og:url" content="http://example.com/2021/06/19/Android/Kotlin/Kotlin%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Damon-Blog">
-<meta property="og:description" content="别走那么快，这样会错过沿途的风景的！">
+<meta property="og:description" content="基础入门基本类型： 数字 Byte Short Int Long Float Double   字符 Char   布尔 Boolean   数组 Array   字符串 String     1，每个数字类型都支持toXXX()转换 2，Int 与 Long才拥有位运算：shl(有符号左移) shr(有符号右移) ushr(无符号右移) and(位与) or(位或) xor(位异或) inv(位">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-19T08:24:08.000Z">
+<meta property="article:modified_time" content="2021-06-21T06:00:01.380Z">
 <meta property="article:author" content="Damon">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="Kotlin">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/06/19/Android/Kotlin/Kotlin%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Damon-Blog</title>
+  <title>Kotlin-语法快速学习 | Damon-Blog</title>
   
 
 
@@ -156,416 +160,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/19/Android/Android%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Damon">
-      <meta itemprop="description" content="别走那么快，这样会错过沿途的风景的！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damon-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/19/Android/Android%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-title-link" itemprop="url">Android-常用知识点</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-19 16:24:08" itemprop="dateCreated datePublished" datetime="2021-06-19T16:24:08+08:00">2021-06-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-21 13:56:06" itemprop="dateModified" datetime="2021-06-21T13:56:06+08:00">2021-06-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="一：权限相关"><a href="#一：权限相关" class="headerlink" title="一：权限相关"></a>一：权限相关</h1><h2 id="1，检测是否获取到权限："><a href="#1，检测是否获取到权限：" class="headerlink" title="1，检测是否获取到权限："></a>1，检测是否获取到权限：</h2><ul>
-<li><p><code>ContextCompat.checkSelfPermission(this, permission)</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```返回的结果 == PackageManager.PERMISSION_DENIED```，即被用户拒绝</span><br><span class="line"></span><br><span class="line">```kotlin</span><br><span class="line">val permissionCheck = ContextCompat.checkSelfPermission(this, permission)</span><br><span class="line">if (permissionCheck == PackageManager.PERMISSION_GRANTED) &#123;</span><br><span class="line">  Log.d(&quot;权限&quot;, &quot;请求成功 = $&#123;permissionCheck&#125;&quot;)</span><br><span class="line">&#125;else&#123;</span><br><span class="line">  Log.d(&quot;权限&quot;, &quot;请求失败 = $&#123;permissionCheck&#125;&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="2，请求权限"><a href="#2，请求权限" class="headerlink" title="2，请求权限"></a>2，请求权限</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 请求权限</span></span><br><span class="line">ActivityCompat.requestPermissions(<span class="keyword">this</span>, deniedPermissions, <span class="number">121</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请求的结果</span></span><br><span class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onRequestPermissionsResult</span><span class="params">(</span></span></span><br><span class="line"><span class="params"><span class="function">        requestCode: <span class="type">Int</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">        permissions: <span class="type">Array</span>&lt;<span class="type">out</span> <span class="type">String</span>&gt;,</span></span></span><br><span class="line"><span class="params"><span class="function">        grantResults: <span class="type">IntArray</span></span></span></span><br><span class="line"><span class="params"><span class="function">)</span></span> &#123;</span><br><span class="line">       </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line"><span class="comment">// permissions = [android.permission.ACCESS_FINE_LOCATION, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_COARSE_LOCATION]</span></span><br><span class="line"><span class="comment">// grantResults = [-1, -1, -1]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3，用户拒绝权限"><a href="#3，用户拒绝权限" class="headerlink" title="3，用户拒绝权限"></a>3，用户拒绝权限</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 用户首次请求权限，此方法返回false，表示第一次请求，不用做什么操作</span></span><br><span class="line"><span class="comment">// 用户首次请求权限的时候拒绝了，第二次请求的时候，此方法返回true，表示之前你拒绝了，那么我要提醒你为什么我需要这个权限</span></span><br><span class="line"><span class="comment">// 用户第二次请求还拒绝了，并点击不再提醒，此方法返回false，表示我提醒你了，不过你还是执意，那我就不管你了</span></span><br><span class="line">ActivityCompat.shouldShowRequestPermissionRationale(<span class="keyword">this</span>, deniedPermission)</span><br></pre></td></tr></table></figure>
-
-<h2 id="4，跳转到系统页面"><a href="#4，跳转到系统页面" class="headerlink" title="4，跳转到系统页面"></a>4，跳转到系统页面</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 跳转到系统界面</span></span><br><span class="line"><span class="keyword">val</span> intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)</span><br><span class="line"><span class="keyword">val</span> uri = Uri.fromParts(<span class="string">&quot;package&quot;</span>, getPackageName(), <span class="literal">null</span>)</span><br><span class="line">intent.setData(uri)</span><br><span class="line">startActivityForResult(intent, <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 监听，再次判断是否给予了权限</span></span><br><span class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onActivityReenter</span><span class="params">(resultCode: <span class="type">Int</span>, <span class="keyword">data</span>: <span class="type">Intent</span>?)</span></span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (requestCode == <span class="number">1</span>) &#123;</span><br><span class="line">		</span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="5，关于地理位置"><a href="#5，关于地理位置" class="headerlink" title="5，关于地理位置"></a>5，关于地理位置</h2><p>在使用蓝牙扫描，WIFI扫描的时候需要授予位置权限，并打开位置信息</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ====== 第一种方式</span></span><br><span class="line"><span class="comment">// 判断位置信息是否开启</span></span><br><span class="line"><span class="keyword">val</span> lm = getSystemService(Context.LOCATION_SERVICE) <span class="keyword">as</span> LocationManager</span><br><span class="line"><span class="comment">// 使用GPS定位</span></span><br><span class="line"><span class="keyword">val</span> gps_enable = lm.isProviderEnabled(LocationManager.GPS_PROVIDER)</span><br><span class="line"><span class="comment">// 使用网络定位</span></span><br><span class="line"><span class="keyword">val</span> net_enable = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER)</span><br><span class="line"></span><br><span class="line"><span class="comment">// ====== 第二种方式</span></span><br><span class="line"><span class="comment">// 判断位置信息是否打开</span></span><br><span class="line"><span class="keyword">if</span> (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.M) &#123;</span><br><span class="line">  <span class="keyword">var</span> locationMode = Settings.Secure.LOCATION_MODE_OFF</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    locationMode = Settings.Secure.getInt(</span><br><span class="line">      <span class="keyword">this</span>.contentResolver,</span><br><span class="line">      Settings.Secure.LOCATION_MODE</span><br><span class="line">    )</span><br><span class="line">  &#125; <span class="keyword">catch</span> (e: SettingNotFoundException) &#123;</span><br><span class="line">    <span class="comment">// do nothing</span></span><br><span class="line">  &#125;</span><br><span class="line">	Log.d(GPS_TAG, <span class="string">&quot;locationMode != Settings.Secure.LOCATION_MODE_OFF = <span class="subst">$&#123;locationMode != Settings.Secure.LOCATION_MODE_OFF&#125;</span>&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="二：使用相关"><a href="#二：使用相关" class="headerlink" title="二：使用相关"></a>二：使用相关</h1><h2 id="Android（P及以上）无法使用Http协议"><a href="#Android（P及以上）无法使用Http协议" class="headerlink" title="Android（P及以上）无法使用Http协议"></a>Android（P及以上）无法使用Http协议</h2><p>解决方法：</p>
-<p>1，在res目录下新建一个xml目录，放入一个xml文件</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">network-security-config</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">base-config</span> <span class="attr">cleartextTrafficPermitted</span>=<span class="string">&quot;true&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">network-security-config</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>2，在AndroidManifest.xml使用</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">manifest</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">application</span></span></span><br><span class="line"><span class="tag">		<span class="attr">...</span>  </span></span><br><span class="line"><span class="tag">		<span class="attr">android:networkSecurityConfig</span>=<span class="string">&quot;@xml/network_security_config&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Android-Dialog显示"><a href="#Android-Dialog显示" class="headerlink" title="Android Dialog显示"></a>Android Dialog显示</h2><p>xml样式解析</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">&quot;AlertDialogStyleLoading&quot;</span> <span class="attr">parent</span>=<span class="string">&quot;@android:style/Theme.Dialog&quot;</span>&gt;</span><span class="xml"></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:windowBackground&quot;</span>&gt;</span>@android:color/transparent<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:windowContentOverlay&quot;</span>&gt;</span>@null<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:windowIsFloating&quot;</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:windowFrame&quot;</span>&gt;</span>@null<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:backgroundDimEnabled&quot;</span>&gt;</span>false<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:windowNoTitle&quot;</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml">	<span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">&quot;android:windowIsTranslucent&quot;</span>&gt;</span>true<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>windowBackground：背景颜色</li>
-<li>windowContentOverlay ： 是否有遮盖</li>
-<li>windowIsFloating：是否悬浮在Activity上</li>
-<li>windowFrame：是否有边框</li>
-<li>backgroundDimEnabled： 是否对话框背景变暗</li>
-<li>windowNoTitle： 是否有标题</li>
-<li>windowIsTranslucent：是否透明</li>
-</ul>
-<h2 id="EditText一些限制"><a href="#EditText一些限制" class="headerlink" title="EditText一些限制"></a>EditText一些限制</h2><ul>
-<li><p>禁止输入空格</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加过滤器</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">EditTextSpaceFilter</span>: <span class="type">InputFilter &#123;</span></span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">filter</span><span class="params">(</span></span></span><br><span class="line"><span class="params"><span class="function">        source: <span class="type">CharSequence</span>?,</span></span></span><br><span class="line"><span class="params"><span class="function">        start: <span class="type">Int</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">        end: <span class="type">Int</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">        dest: <span class="type">Spanned</span>?,</span></span></span><br><span class="line"><span class="params"><span class="function">        dstart: <span class="type">Int</span>,</span></span></span><br><span class="line"><span class="params"><span class="function">        dend: <span class="type">Int</span></span></span></span><br><span class="line"><span class="params"><span class="function">    )</span></span>: CharSequence? &#123;</span><br><span class="line">        <span class="keyword">if</span> (source.isNullOrEmpty()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回null表示接收输入的字符,返回空字符串表示不接受输入的字符</span></span><br><span class="line">        <span class="keyword">if</span> (Character.isWhitespace(source.first()))</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加</span></span><br><span class="line">et_wifi_password.filters = arrayOf(</span><br><span class="line">  EditTextSpaceFilter(), <span class="comment">// 空格过滤器</span></span><br><span class="line">  InputFilter.LengthFilter(<span class="number">10</span>) <span class="comment">// 长度过滤器</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></li>
-<li><p>禁止复制粘贴</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 禁止输入框复制粘贴菜单</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@SuppressLint(<span class="meta-string">&quot;ClickableViewAccessibility&quot;</span>)</span></span><br><span class="line"><span class="keyword">open</span> <span class="function"><span class="keyword">fun</span> <span class="title">disableCopyAndPaste</span><span class="params">(editText: <span class="type">EditText</span>?)</span></span> &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (editText == <span class="literal">null</span>) &#123;</span><br><span class="line">      <span class="keyword">return</span></span><br><span class="line">    &#125;</span><br><span class="line">    editText.setOnLongClickListener(View.OnLongClickListener &#123; <span class="literal">true</span> &#125;)</span><br><span class="line">    editText.isLongClickable = <span class="literal">false</span></span><br><span class="line">    editText.setOnTouchListener(View.OnTouchListener &#123; v, event -&gt;</span><br><span class="line">        <span class="keyword">if</span> (event.action === MotionEvent.ACTION_DOWN) &#123;</span><br><span class="line">            <span class="comment">// setInsertionDisabled when user touches the view</span></span><br><span class="line">            setInsertionDisabled(editText)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="literal">false</span></span><br><span class="line">    &#125;)</span><br><span class="line">    editText.customSelectionActionModeCallback = <span class="keyword">object</span> : ActionMode.Callback &#123;</span><br><span class="line">      <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreateActionMode</span><span class="params">(mode: <span class="type">ActionMode</span>?, menu: <span class="type">Menu</span>?)</span></span>: <span class="built_in">Boolean</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onPrepareActionMode</span><span class="params">(mode: <span class="type">ActionMode</span>?, menu: <span class="type">Menu</span>?)</span></span>: <span class="built_in">Boolean</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onActionItemClicked</span><span class="params">(mode: <span class="type">ActionMode</span>?, item: <span class="type">MenuItem</span>?)</span></span>: <span class="built_in">Boolean</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onDestroyActionMode</span><span class="params">(mode: <span class="type">ActionMode</span>?)</span></span> &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">catch</span> (e: Exception) &#123;</span><br><span class="line">    e.printStackTrace()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="Activity页面设置"><a href="#Activity页面设置" class="headerlink" title="Activity页面设置"></a>Activity页面设置</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//无title</span></span><br><span class="line">requestWindowFeature(Window.FEATURE_NO_TITLE);</span><br><span class="line"><span class="comment">//全屏</span></span><br><span class="line">getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,</span><br><span class="line">WindowManager.LayoutParams.FLAG_FULLSCREEN);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 坚持竖屏</span></span><br><span class="line">setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h1 id="三：使用相关"><a href="#三：使用相关" class="headerlink" title="三：使用相关"></a>三：使用相关</h1><h2 id="1，正则验证"><a href="#1，正则验证" class="headerlink" title="1，正则验证"></a>1，正则验证</h2><ul>
-<li><p>IP地址</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">([1-9]|[1-9]\d|1\d&#123;2&#125;|2[0-4]\d|25[0-5])(\.(\d|[1-9]\d|1\d&#123;2&#125;|2[0-4]\d|25[0-5]))&#123;3&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/19/Android/Jetpack/Compose/Compose/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Damon">
-      <meta itemprop="description" content="别走那么快，这样会错过沿途的风景的！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damon-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/19/Android/Jetpack/Compose/Compose/" class="post-title-link" itemprop="url">Android-Jetpack：Compose</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-19 16:24:08" itemprop="dateCreated datePublished" datetime="2021-06-19T16:24:08+08:00">2021-06-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-21 13:48:45" itemprop="dateModified" datetime="2021-06-21T13:48:45+08:00">2021-06-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="一：-Gradle配置"><a href="#一：-Gradle配置" class="headerlink" title="一： Gradle配置"></a>一： Gradle配置</h1><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Kotlin版本必须为1.4.21及以上</span></span><br><span class="line">plugins &#123;</span><br><span class="line">  id <span class="string">&#x27;org.jetbrains.kotlin.android&#x27;</span> version <span class="string">&#x27;1.4.21&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置app的build.gradle</span></span><br><span class="line"><span class="comment">// 1，Api版本设置为21或者更高级别</span></span><br><span class="line"><span class="comment">// 2，启用compose</span></span><br><span class="line"><span class="comment">// 3，设置Kotlin编译器插件版本</span></span><br><span class="line">android &#123;</span><br><span class="line">  </span><br><span class="line">  	<span class="comment">// 1</span></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion <span class="number">21</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 2</span></span><br><span class="line">    buildFeatures &#123;</span><br><span class="line">        compose <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Set both the Java and Kotlin compilers to target Java 8.</span></span><br><span class="line"></span><br><span class="line">    compileOptions &#123;</span><br><span class="line">        sourceCompatibility JavaVersion.VERSION_1_8</span><br><span class="line">        targetCompatibility JavaVersion.VERSION_1_8</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    kotlinOptions &#123;</span><br><span class="line">        jvmTarget = <span class="string">&quot;1.8&quot;</span></span><br><span class="line">        useIR = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">// 3</span></span><br><span class="line">    composeOptions &#123;</span><br><span class="line">        kotlinCompilerVersion <span class="string">&#x27;1.4.21&#x27;</span></span><br><span class="line">        kotlinCompilerExtensionVersion <span class="string">&#x27;1.0.0-alpha10&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加配置依赖包</span></span><br><span class="line">dependencies &#123;</span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.ui:ui:1.0.0-alpha10&#x27;</span></span><br><span class="line">    <span class="comment">// 工具支持 (Previews, etc.)</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.ui:ui-tooling:1.0.0-alpha10&#x27;</span></span><br><span class="line">    <span class="comment">// 基础组件 (Border, Background, Box, Image, Scroll, shapes, animations, etc.)</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.foundation:foundation:1.0.0-alpha10&#x27;</span></span><br><span class="line">    <span class="comment">// MD风格</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.material:material:1.0.0-alpha10&#x27;</span></span><br><span class="line">    <span class="comment">// MD风格图示</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.material:material-icons-core:1.0.0-alpha10&#x27;</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.material:material-icons-extended:1.0.0-alpha10&#x27;</span></span><br><span class="line">    <span class="comment">// 可观察数据</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.runtime:runtime-livedata:1.0.0-alpha10&#x27;</span></span><br><span class="line">    implementation <span class="string">&#x27;androidx.compose.runtime:runtime-rxjava2:1.0.0-alpha10&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// UI测试</span></span><br><span class="line">    androidTestImplementation <span class="string">&#x27;androidx.compose.ui:ui-test-junit4:1.0.0-alpha10&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="二：基础使用"><a href="#二：基础使用" class="headerlink" title="二：基础使用"></a>二：基础使用</h1><h2 id="组件使用："><a href="#组件使用：" class="headerlink" title="组件使用："></a>组件使用：</h2><ul>
-<li><p>定义可组合函数（使用@Composable）</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">Screen</span><span class="params">()</span></span>&#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>显示文本</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">MyText</span><span class="params">()</span></span> &#123;</span><br><span class="line">	  <span class="keyword">var</span> typography = MaterialTheme.typography</span><br><span class="line">    Text(</span><br><span class="line">      	style = typography.h6, <span class="comment">// MD风格文本</span></span><br><span class="line">      	maxLines = <span class="number">2</span>, <span class="comment">// 长度上限设置为 2 行</span></span><br><span class="line">      	overflow = TextOverflow.Ellipsis, <span class="comment">// 自动截短</span></span><br><span class="line">	      text = <span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">    Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">    Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>显示列表</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">MyTextColumn</span><span class="params">()</span></span> &#123;</span><br><span class="line">    Column &#123;</span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>显示图片</p>
-<ul>
-<li>contentScale = ContentScale.Crop ： 设置图片显示模式</li>
-</ul>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">MyImageWithMidifier</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> painterResource = painterResource(id = R.drawable.ic_launcher_background)</span><br><span class="line">    Image(</span><br><span class="line">        modifier = Modifier</span><br><span class="line">            .height(<span class="number">200.</span>dp)</span><br><span class="line">            .width(<span class="number">200.</span>dp),</span><br><span class="line">        painter = painterResource,</span><br><span class="line">        contentDescription = <span class="literal">null</span>,</span><br><span class="line">        contentScale = ContentScale.Crop</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>显示分割线</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Spacer(modifier = Modifier.fillMaxWidth().height(<span class="number">10.</span>dp))</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="组件修饰："><a href="#组件修饰：" class="headerlink" title="组件修饰："></a>组件修饰：</h2><p>使用<code>modifier</code>对组件进行修饰</p>
-<ul>
-<li><p><code>Padding</code></p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">MyTextColumnWithMidifier</span><span class="params">()</span></span> &#123;</span><br><span class="line">    Column(modifier = Modifier.padding(<span class="number">16.</span>dp)) &#123;</span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p><code>fillMaxWidth()</code>/<code>fillMaxHeight()</code></p>
-</li>
-<li><p><code>width()</code>/<code>height()</code></p>
-</li>
-<li><p><code>clip</code>：裁剪</p>
-</li>
-</ul>
-<h1 id="三：自定义控件"><a href="#三：自定义控件" class="headerlink" title="三：自定义控件"></a>三：自定义控件</h1><h2 id="基础绘制"><a href="#基础绘制" class="headerlink" title="基础绘制"></a>基础绘制</h2><ul>
-<li><p>画布</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Canvas(modifier = Modifier.fillMaxSize()) &#123;</span><br><span class="line">		<span class="keyword">val</span> canvasWidth = size.width</span><br><span class="line">		<span class="keyword">val</span> canvasHeight = size.height</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>画线</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">drawLine(</span><br><span class="line">			start = Offset(x=canvasWidth, y = <span class="number">0f</span>),</span><br><span class="line">			end = Offset(x = <span class="number">0f</span>, y = canvasHeight),</span><br><span class="line">			color = Color.Blue,</span><br><span class="line">      strokeWidth = <span class="number">5F</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></li>
-<li><p>画圆</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">drawCircle(</span><br><span class="line">  color = Color.Blue,</span><br><span class="line">	center = Offset(x = canvasWidth / <span class="number">2</span>, y = canvasHeight / <span class="number">2</span>),</span><br><span class="line">	radius = size.minDimension / <span class="number">4</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></li>
-<li><p>画矩形</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> canvasQuadrantSize = size / <span class="number">2F</span></span><br><span class="line">drawRect(</span><br><span class="line">	color = Color.Green,</span><br><span class="line">	size = canvasQuadrantSize</span><br><span class="line">)</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="基础绘制-常用操作"><a href="#基础绘制-常用操作" class="headerlink" title="基础绘制-常用操作"></a>基础绘制-常用操作</h2><ul>
-<li><p>insert：绘制的内容垂直偏移量和水平偏移量</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inset(<span class="number">50F</span>, <span class="number">30F</span>) &#123;</span><br><span class="line">	<span class="comment">// 需要绘制的内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>rotate：旋转</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rotate(degrees = <span class="number">45F</span>)&#123;</span><br><span class="line">  <span class="comment">// 需要绘制的内容</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>withTransform：多变化统一变换</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">withTransform(&#123;</span><br><span class="line">    translate(left = canvasWidth/<span class="number">5F</span>)</span><br><span class="line">    rotate(degrees=<span class="number">45F</span>)</span><br><span class="line">&#125;) &#123;</span><br><span class="line">    drawRect(</span><br><span class="line">        color = Color.Gray,</span><br><span class="line">        topLeft = Offset(x = canvasWidth / <span class="number">3F</span>, y = canvasHeight / <span class="number">3F</span>),</span><br><span class="line">        size = canvasSize / <span class="number">3F</span></span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h1 id="四：动画"><a href="#四：动画" class="headerlink" title="四：动画"></a>四：动画</h1><ul>
-<li>AnimatedVisibility：可见不可见动画</li>
-<li>animateContentSize：内容修改动画</li>
-<li>Crossfade：</li>
-<li>animate*AsState</li>
-</ul>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">MyView</span><span class="params">()</span></span>&#123;</span><br><span class="line">  Canvas(modifier = Modifier.fillMaxSize()) &#123;</span><br><span class="line">		<span class="keyword">val</span> canvasWidth = size.width</span><br><span class="line">		<span class="keyword">val</span> canvasHeight = size.height</span><br><span class="line"></span><br><span class="line">		drawLine(</span><br><span class="line">			start = Offset(x=canvasWidth, y = <span class="number">0f</span>),</span><br><span class="line">			end = Offset(x = <span class="number">0f</span>, y = canvasHeight),</span><br><span class="line">			color = Color.Blue,</span><br><span class="line">      strokeWidth = <span class="number">5F</span></span><br><span class="line">		)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="常用内置界面"><a href="#常用内置界面" class="headerlink" title="常用内置界面"></a>常用内置界面</h1><table>
-<thead>
-<tr>
-<th>内置Compose</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Surface</td>
-<td>添加背景色</td>
-</tr>
-<tr>
-<td>Button</td>
-<td>按钮</td>
-</tr>
-<tr>
-<td>Text</td>
-<td>文本</td>
-</tr>
-<tr>
-<td>Column</td>
-<td>垂直放置项目</td>
-</tr>
-<tr>
-<td>ScrollableColumn</td>
-<td>可滚动垂直放置项目，== ScrollView</td>
-</tr>
-<tr>
-<td>LazyColumn</td>
-<td>可滚动垂直放置项目，== RecycleView，惰性加载</td>
-</tr>
-<tr>
-<td>Divider</td>
-<td>分割线</td>
-</tr>
-<tr>
-<td>Row</td>
-<td>水平放置项目</td>
-</tr>
-<tr>
-<td>TopAppBar</td>
-<td>顶部导航栏</td>
-</tr>
-<tr>
-<td>Scaffold</td>
-<td>允许您使用基本的Material Design布局结构来实现UI</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<h1 id="常用的功能"><a href="#常用的功能" class="headerlink" title="常用的功能"></a>常用的功能</h1><table>
-<thead>
-<tr>
-<th>内置功能</th>
-<th>功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>remember</td>
-<td>可变状态</td>
-</tr>
-<tr>
-<td>mutableStateOf</td>
-<td>可组合可变存储器函数</td>
-</tr>
-<tr>
-<td>animateColorAsState</td>
-<td>动画</td>
-</tr>
-</tbody></table>
-<h1 id="基础："><a href="#基础：" class="headerlink" title="基础："></a>基础：</h1><h2 id="第一课：可组合函数"><a href="#第一课：可组合函数" class="headerlink" title="第一课：可组合函数"></a>第一课：可组合函数</h2><blockquote>
-<p> 只需要将 <code>@Composable</code> 添加到函数名称中即可创建可组合函数</p>
-<p>添加 <code>@Preview</code> 即可预览函数，注意要加在不带参数的可组合函数中</p>
-</blockquote>
-<p>定义可组合函数</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> : <span class="type">AppCompatActivity</span></span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState)</span><br><span class="line">        setContent &#123;</span><br><span class="line">          	<span class="comment">// 调用可组合函数</span></span><br><span class="line">            Greeting(<span class="string">&quot;Android&quot;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义可组合函数</span></span><br><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">Greeting</span><span class="params">(name: <span class="type">String</span>)</span></span> &#123;</span><br><span class="line">    Text (text = <span class="string">&quot;Hello <span class="variable">$name</span>!&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="第二课：布局"><a href="#第二课：布局" class="headerlink" title="第二课：布局"></a>第二课：布局</h2><p>Column：可垂直堆叠元素</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> : <span class="type">AppCompatActivity</span></span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState)</span><br><span class="line">        setContent &#123;</span><br><span class="line">            NewsStory()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    Column &#123;</span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Column：使用 <code>Modifier</code> 添加样式，可配置尺寸和位置，以及排列方式</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    Column(</span><br><span class="line">    	modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">    ) &#123;</span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Column：添加图片</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">  	<span class="comment">// 从资源文件夹中获取图片</span></span><br><span class="line">    <span class="keyword">val</span> image = imageResource(R.drawable.header)</span><br><span class="line"></span><br><span class="line">    Column(</span><br><span class="line">        modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">    ) &#123;</span><br><span class="line">      	<span class="comment">// 设置图片</span></span><br><span class="line">        Image(image)</span><br><span class="line"></span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Column：修改图片样式</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> image = imageResource(R.drawable.header)</span><br><span class="line">    Column(</span><br><span class="line">        modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">    ) &#123;</span><br><span class="line">        <span class="keyword">val</span> imageModifier = Modifier</span><br><span class="line">            .preferredHeight(<span class="number">180.</span>dp) <span class="comment">// 指定图片的高度</span></span><br><span class="line">            .fillMaxWidth() <span class="comment">// 指定图片的宽度可以填充所属布局</span></span><br><span class="line"></span><br><span class="line">        Image(image,</span><br><span class="line">            modifier = imageModifier,</span><br><span class="line">            contentScale = ContentScale.Crop) <span class="comment">// 指定图片填充Column整个宽度，根据需要裁剪为适当的高度</span></span><br><span class="line"></span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Column：添加Spacer分割线，将图片和标题分开</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> image = imageResource(R.drawable.header)</span><br><span class="line">    Column(</span><br><span class="line">        modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">    ) &#123;</span><br><span class="line">        <span class="keyword">val</span> imageModifier = Modifier</span><br><span class="line">            .preferredHeight(<span class="number">180.</span>dp)</span><br><span class="line">            .fillMaxWidth()</span><br><span class="line"></span><br><span class="line">        Image(image,</span><br><span class="line">            modifier = imageModifier,</span><br><span class="line">            contentScale = ContentScale.Crop)</span><br><span class="line">      	<span class="comment">// 添加分割线</span></span><br><span class="line">        Spacer(Modifier.preferredHeight(<span class="number">16.</span>dp))</span><br><span class="line"></span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="第三课：Material-Design"><a href="#第三课：Material-Design" class="headerlink" title="第三课：Material Design"></a>第三课：Material Design</h2><p>主要关键要素： <code>Shape</code> </p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> image = imageResource(R.drawable.header)</span><br><span class="line">    Column(</span><br><span class="line">        modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">    ) &#123;</span><br><span class="line">        <span class="keyword">val</span> imageModifier = Modifier</span><br><span class="line">            .preferredHeight(<span class="number">180.</span>dp)</span><br><span class="line">            .fillMaxWidth()</span><br><span class="line">            .clip(shape = RoundedCornerShape(<span class="number">4.</span>dp)) <span class="comment">// 设置圆角裁切</span></span><br><span class="line"></span><br><span class="line">        Image(image,</span><br><span class="line">            modifier = imageModifier,</span><br><span class="line">            contentScale = ContentScale.Crop)</span><br><span class="line">        Spacer(Modifier.preferredHeight(<span class="number">16.</span>dp))</span><br><span class="line"></span><br><span class="line">        Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;Davenport, California&quot;</span>)</span><br><span class="line">        Text(<span class="string">&quot;December 2018&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>使用<code>Material主题</code>设置文本样式</p>
-<ul>
-<li>MaterialTheme.typography</li>
-</ul>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> image = imageResource(R.drawable.header)</span><br><span class="line">    MaterialTheme &#123;</span><br><span class="line">      	<span class="comment">// 获取Material的默认文本样式</span></span><br><span class="line">        <span class="keyword">val</span> typography = MaterialTheme.typography</span><br><span class="line">        Column(</span><br><span class="line">            modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">        ) &#123;</span><br><span class="line">            <span class="keyword">val</span> imageModifier = Modifier</span><br><span class="line">                .preferredHeight(<span class="number">180.</span>dp)</span><br><span class="line">                .fillMaxWidth()</span><br><span class="line">                .clip(shape = RoundedCornerShape(<span class="number">4.</span>dp))</span><br><span class="line"></span><br><span class="line">            Image(image,</span><br><span class="line">                modifier = imageModifier,</span><br><span class="line">                contentScale = ContentScale.Crop)</span><br><span class="line">            Spacer(Modifier.preferredHeight(<span class="number">16.</span>dp))</span><br><span class="line"></span><br><span class="line">            Text(<span class="string">&quot;A day in Shark Fin Cove&quot;</span>,</span><br><span class="line">                style = typography.h6) <span class="comment">// 设置文本样式</span></span><br><span class="line">            Text(<span class="string">&quot;Davenport, California&quot;</span>,</span><br><span class="line">                style = typography.body2)</span><br><span class="line">            Text(<span class="string">&quot;December 2018&quot;</span>,</span><br><span class="line">                style = typography.body2)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>如果标题文本过长则进行截断配置</p>
-<p>属性设置</p>
-<ul>
-<li>maxLines</li>
-<li>overflow</li>
-</ul>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">NewsStory</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> image = imageResource(R.drawable.header)</span><br><span class="line">    MaterialTheme &#123;</span><br><span class="line">        <span class="keyword">val</span> typography = MaterialTheme.typography</span><br><span class="line">        Column(</span><br><span class="line">            modifier = Modifier.padding(<span class="number">16.</span>dp)</span><br><span class="line">        ) &#123;</span><br><span class="line">            <span class="keyword">val</span> imageModifier = Modifier</span><br><span class="line">                .preferredHeight(<span class="number">180.</span>dp)</span><br><span class="line">                .fillMaxWidth()</span><br><span class="line">                .clip(shape = RoundedCornerShape(<span class="number">4.</span>dp))</span><br><span class="line"></span><br><span class="line">            Image(image,</span><br><span class="line">                modifier = imageModifier,</span><br><span class="line">                contentScale = ContentScale.Crop)</span><br><span class="line">            Spacer(Modifier.preferredHeight(<span class="number">16.</span>dp))</span><br><span class="line"></span><br><span class="line">            Text(</span><br><span class="line">                <span class="string">&quot;A day wandering through the sandhills &quot;</span> +</span><br><span class="line">                     <span class="string">&quot;in Shark Fin Cove, and a few of the &quot;</span> +</span><br><span class="line">                     <span class="string">&quot;sights I saw&quot;</span>,</span><br><span class="line">                style = typography.h6,</span><br><span class="line">                maxLines = <span class="number">2</span>, <span class="comment">// 设置文本2行</span></span><br><span class="line">                overflow = TextOverflow.Ellipsis) <span class="comment">// 设置文本超出部分后面...显示</span></span><br><span class="line">            Text(<span class="string">&quot;Davenport, California&quot;</span>,</span><br><span class="line">                style = typography.body2)</span><br><span class="line">            Text(<span class="string">&quot;December 2018&quot;</span>,</span><br><span class="line">                style = typography.body2)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="State"><a href="#State" class="headerlink" title="State"></a>State</h1><h2 id="初步使用"><a href="#初步使用" class="headerlink" title="初步使用"></a>初步使用</h2><p>Compose UI的数据变化通过可观察状态来实现，常用的有State, LiveData, StateFlow, Flow, Observable</p>
-<ul>
-<li>ViewModel+LiveData+Activity</li>
-</ul>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloViewModel</span>: <span class="type">ViewModel</span></span>()&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">val</span> _name = MutableLiveData(<span class="string">&quot;&quot;</span>)</span><br><span class="line">  <span class="keyword">val</span> name: LiveData&lt;String&gt; = _name</span><br><span class="line">  <span class="function"><span class="keyword">fun</span> <span class="title">onNameChanged</span><span class="params">(newName: <span class="type">String</span>)</span></span>&#123;</span><br><span class="line">    _name.value = newName</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloActivity</span>: <span class="type">AppCompatActivity</span></span>()&#123;</span><br><span class="line">  <span class="keyword">val</span> helloViewModel <span class="keyword">by</span> viewModels&lt;HelloViewModel&gt;()</span><br><span class="line">  <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(saveInstanceState: <span class="type">Bundle</span>?)</span></span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(saveInstanceState)</span><br><span class="line">    binding.textInput.doAfterTextChanged&#123;</span><br><span class="line">      helloViewModel.onNameChanged(it.toString)</span><br><span class="line">    &#125;</span><br><span class="line">    helloViewModel.name.observe(<span class="keyword">this</span>)&#123; name -&gt; </span><br><span class="line">      binding.helloText.text = <span class="string">&quot;Hello, <span class="variable">$name</span>&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>ViewModel + Compose + Activity</p>
-<blockquote>
-<p><code>observeAsState</code> 可观察 <code>LiveData&lt;T&gt;</code> 并返回 <a target="_blank" rel="noopener" href="https://developer.android.google.cn/reference/kotlin/androidx/compose/runtime/State"><code>State</code></a> 对象，每当 <code>LiveData</code> 发生变化时，该对象都会更新。<code>State&lt;T&gt;</code> 是 Jetpack Compose 可以直接使用的可观察类型</p>
-</blockquote>
-</li>
-</ul>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloViewModel</span>: <span class="type">ViewModel</span></span>()&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">val</span> _name = MutableLiveData(<span class="string">&quot;&quot;</span>)</span><br><span class="line">  <span class="keyword">val</span> name: LiveData&lt;String&gt; = _name</span><br><span class="line">  <span class="function"><span class="keyword">fun</span> <span class="title">onNameChanged</span><span class="params">(newName: <span class="type">String</span>)</span></span>&#123;</span><br><span class="line">    _name.value = newName</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">HelloScreen</span><span class="params">(helloViewModel: <span class="type">HelloViewModel</span> = viewModel()</span></span>)&#123;</span><br><span class="line">  <span class="comment">// 使用委托属性by隐式将State&lt;T&gt;视为类型T的对象</span></span><br><span class="line">  <span class="comment">// val nameState: State&lt;String&gt; = helloViewModel.name.observeAsState(&quot;&quot;)</span></span><br><span class="line">  <span class="keyword">val</span> name: String <span class="keyword">by</span> helloViewModel.name.onserveAsState(<span class="string">&quot;&quot;</span>)</span><br><span class="line">  Column&#123;</span><br><span class="line">    Text(text = name)</span><br><span class="line">    TextField(</span><br><span class="line">	    value = name,</span><br><span class="line">      onValueChange = &#123;helloViewModel.onNameChanged(it)&#125;,</span><br><span class="line">      label = &#123;Text(<span class="string">&quot;Name&quot;</span>)&#125;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="可组合项的状态"><a href="#可组合项的状态" class="headerlink" title="可组合项的状态"></a>可组合项的状态</h2><p>使用remember在可组合项中创建内部状态</p>
-<ul>
-<li><p>添加状态</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在可组合项中声明MutableState对象的方法有三种</span></span><br><span class="line"><span class="keyword">var</span> mutableState = remember &#123; mutableStateOf(default) &#125;</span><br><span class="line"><span class="keyword">var</span> value <span class="keyword">by</span> remember &#123; mutableStateOf(default) &#125;</span><br><span class="line"><span class="keyword">val</span> (value, setValue) = remember&#123; mutableStateOf(default) &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注意</span></span><br><span class="line"><span class="comment">// = 跟 by 是不同的</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="其他状态"><a href="#其他状态" class="headerlink" title="其他状态"></a>其他状态</h2><p>Jetpack Compose 并不要求您使用<code>MutableState&lt;T&gt;</code>存储状态，Jetpack Compose支持其它可观察类型，不过在读取其它可观察类型之前，需要转换成<code>State&lt;T&gt;</code>，才能在发生状态变化时自动重组界面，其它可观察类型如下：</p>
-<ul>
-<li>LiveData</li>
-<li>Flow</li>
-<li>RxJava2</li>
-</ul>
-<blockquote>
-<p>注意：可变对象（ArrayList<T>或者mutableListOf()）可能会导致看到不正确的数据，不可变数据不能由Compose观察，因为发生变化时不能进行重组，需要使用可观察的存储器（State&lt;List<T>&gt;）和不可变的listOf()</p>
-</blockquote>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>1，在组合中被<code>remember</code>记住的值在配置更改（如旋转）的时候会被忘记并重新创建，可以改用保存的实例状态，在配置更改的时候自动保存和恢复状态</p>
-<ul>
-<li><p>savedInstanceState</p>
-<blockquote>
-<p>可组合函数 savedInstanceState<T> 会返回MutableState<T>，它会在配置更改时自动保存和恢复自身</p>
-</blockquote>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">ExpandingCard</span><span class="params">(title: <span class="type">String</span>, body: <span class="type">String</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> expanded <span class="keyword">by</span> savedInstanceState &#123; <span class="literal">false</span> &#125;</span><br><span class="line">    ExpandingCard(</span><br><span class="line">        title = title,</span><br><span class="line">        body = body,</span><br><span class="line">        expanded = expanded,</span><br><span class="line">        onExpand = &#123; expanded = <span class="literal">true</span> &#125;,</span><br><span class="line">        onCollapse = &#123; expanded = <span class="literal">false</span> &#125;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<p>​    </p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -581,10 +179,9 @@
       <meta itemprop="name" content="Damon-Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/19/Android/Kotlin/Kotlin%E8%AF%AD%E6%B3%95%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">Kotlin-语法快速学习</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Kotlin-语法快速学习
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -623,7 +220,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="基础入门"><a href="#基础入门" class="headerlink" title="基础入门"></a>基础入门</h1><h2 id="基本类型："><a href="#基本类型：" class="headerlink" title="基本类型："></a>基本类型：</h2><ul>
+        <h1 id="基础入门"><a href="#基础入门" class="headerlink" title="基础入门"></a>基础入门</h1><h2 id="基本类型："><a href="#基本类型：" class="headerlink" title="基本类型："></a>基本类型：</h2><ul>
 <li>数字<ul>
 <li>Byte</li>
 <li>Short</li>
@@ -767,165 +364,37 @@
 
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/Android/" rel="tag"># Android</a>
+              <a href="/tags/Kotlin/" rel="tag"># Kotlin</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/31/Android/Kotlin/Kotlin-%E5%8D%8F%E7%A8%8B/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Damon">
-      <meta itemprop="description" content="别走那么快，这样会错过沿途的风景的！">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damon-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/31/Android/Kotlin/Kotlin-%E5%8D%8F%E7%A8%8B/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-31 10:43:51" itemprop="dateCreated datePublished" datetime="2021-03-31T10:43:51+08:00">2021-03-31</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/03/31/Android/Kotlin/Kotlin-%E5%8D%8F%E7%A8%8B/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/06/19/Android/Jetpack/Compose/Compose/" rel="next" title="Android-Jetpack：Compose">
+      Android-Jetpack：Compose <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/22/Android/%E9%9D%A2%E8%AF%95/Android%E9%9D%A2%E8%AF%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Damon">
-      <meta itemprop="description" content="别走那么快，这样会错过沿途的风景的！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Damon-Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/02/22/Android/%E9%9D%A2%E8%AF%95/Android%E9%9D%A2%E8%AF%95/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-02-22 21:40:50" itemprop="dateCreated datePublished" datetime="2021-02-22T21:40:50+08:00">2021-02-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-26 08:22:24" itemprop="dateModified" datetime="2021-02-26T08:22:24+08:00">2021-02-26</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="面试一"><a href="#面试一" class="headerlink" title="面试一"></a>面试一</h1><h2 id="页面-A-页面-B的跳转过程方法的调用"><a href="#页面-A-页面-B的跳转过程方法的调用" class="headerlink" title="页面 A - 页面 B的跳转过程方法的调用"></a>页面 A - 页面 B的跳转过程方法的调用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">启动A页面：</span></span><br><span class="line"><span class="comment">	A - onCreate()</span></span><br><span class="line"><span class="comment">	A - onStart()</span></span><br><span class="line"><span class="comment">	A - onResume()</span></span><br><span class="line"><span class="comment">跳转到B页面：</span></span><br><span class="line"><span class="comment">	A - onPause()</span></span><br><span class="line"><span class="comment">	B - onCreate()</span></span><br><span class="line"><span class="comment">	B - onStart()</span></span><br><span class="line"><span class="comment">	B - onResume()</span></span><br><span class="line"><span class="comment">	A - onStop()</span></span><br><span class="line"><span class="comment">B页面返回到A页面：</span></span><br><span class="line"><span class="comment">	B - onPause()</span></span><br><span class="line"><span class="comment">	A - onRestart()</span></span><br><span class="line"><span class="comment">	A - onStart()</span></span><br><span class="line"><span class="comment">	A - onResume()</span></span><br><span class="line"><span class="comment">	B - onStop()</span></span><br><span class="line"><span class="comment">	B - onDestroy()</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Service的启动方式"><a href="#Service的启动方式" class="headerlink" title="Service的启动方式"></a>Service的启动方式</h2><h2 id="Http使用"><a href="#Http使用" class="headerlink" title="Http使用"></a>Http使用</h2><h2 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h2><h2 id="MVC，MVP，MVVM"><a href="#MVC，MVP，MVVM" class="headerlink" title="MVC，MVP，MVVM"></a>MVC，MVP，MVVM</h2><p>MVC（Model，View，Controller）</p>
-<p>M层：处理数据，业务逻辑</p>
-<p>V层：处理界面</p>
-<p>C层：控制V层和M层的联系</p>
-<p>Android中：M层负责处理数据，V层为XML布局文件，C层为Activity控制器，C层持有M层与V层</p>
-<h2 id="MVVM哪一层是处理数据的"><a href="#MVVM哪一层是处理数据的" class="headerlink" title="MVVM哪一层是处理数据的"></a>MVVM哪一层是处理数据的</h2><h2 id="HashMap原理"><a href="#HashMap原理" class="headerlink" title="HashMap原理"></a>HashMap原理</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HashMap put方法</span></span><br><span class="line"><span class="comment">// 1，需要先hash一下key值</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> V <span class="title">put</span><span class="params">(K key, V value)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> putVal(hash(key), key, value, <span class="keyword">false</span>, <span class="keyword">true</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// hash key值</span></span><br><span class="line"><span class="comment">// 用key的hashCode与hashCode的高位进行异或</span></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">hash</span><span class="params">(Object key)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h;</span><br><span class="line">	<span class="keyword">return</span> (key == <span class="keyword">null</span>) ? <span class="number">0</span> : (h = key.hashCode()) ^ (h &gt;&gt;&gt; <span class="number">16</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 默认首次put数据的时候，会创建一个table数组，长度为默认16，阈值为16*0.75f = 12,，然后放入并计算需要放入的数据下标 p = tab[i = (n - 1) &amp; hash]，此时不会发生碰撞可以放入</span></span><br><span class="line"><span class="comment">// 再次put数据的时候，如果发生了下标碰撞，则判断 hash值，键值是否一致，一致则修改value值</span></span><br><span class="line"><span class="keyword">if</span> (p.hash == hash &amp;&amp; ((k = p.key) == key || (key != <span class="keyword">null</span> &amp;&amp; key.equals(k))))</span><br><span class="line"><span class="comment">// 如果放入的数据超过阈值，也就是一开始的12，则进行扩容resize()，新扩容的长度为原长度的2倍，新的阈值为原来阈值的2倍，当数组里面有一个链表超过了8，则链表转换成红黑树</span></span><br><span class="line">  </span><br><span class="line"> </span><br><span class="line"><span class="comment">// hashMap 获取数据</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> V <span class="title">get</span><span class="params">(Object key)</span> </span>&#123;</span><br><span class="line">	Node&lt;K,V&gt; e;</span><br><span class="line">	<span class="keyword">return</span> (e = getNode(hash(key), key)) == <span class="keyword">null</span> ? <span class="keyword">null</span> : e.value;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 先计算hash key然后计算在数组中的位置，如果存在，则判断hash值是否相同，在判断key内存地址是否相同，或者equals是否相同，相同则找到value，如果不同，则遍历数组位置下的链表或者红黑树，然后判断</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>ArrayList原理</p>
-<blockquote>
-<p>优点：查找效率高，索引遍历快</p>
-<p>缺点：插入删除指定位置都要对整个数组进行移动，效率低</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ArrayList初始化的时候，只是this.elementData指向一个</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ArrayList</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">this</span>.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 首次添加的时候，需要先确认下容量，如果是初始化的，则默认先给10个容量，如果一直添加，超过10个数据，则进行扩容，增加到原来容量的1.5倍</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span> </span>&#123;</span><br><span class="line">	ensureCapacityInternal(size + <span class="number">1</span>);  <span class="comment">// Increments modCount!!</span></span><br><span class="line">	elementData[size++] = e;</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>LinkedList原理</p>
-<blockquote>
-<p>优点：增加和删除快</p>
-<p>缺点：查询慢</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// LinkedList初始化</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">LinkedList</span><span class="params">()</span> </span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 添加操作</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span> </span>&#123;</span><br><span class="line">	linkLast(e);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">linkLast</span><span class="params">(E e)</span> </span>&#123;</span><br><span class="line"> 	<span class="keyword">final</span> Node&lt;E&gt; l = last;</span><br><span class="line">	<span class="keyword">final</span> Node&lt;E&gt; newNode = <span class="keyword">new</span> Node&lt;&gt;(l, e, <span class="keyword">null</span>);</span><br><span class="line">	last = newNode;</span><br><span class="line">	<span class="keyword">if</span> (l == <span class="keyword">null</span>)</span><br><span class="line">		first = newNode;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		l.next = newNode;</span><br><span class="line">	size++;</span><br><span class="line">	modCount++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -978,6 +447,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8"><span class="nav-number">1.</span> <span class="nav-text">基础入门</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">基本类型：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6%E6%B5%81%EF%BC%88if%EF%BC%8Cwhen%EF%BC%8Cfor%EF%BC%8Cwhile%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">控制流（if，when，for，while）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB"><span class="nav-number">1.3.</span> <span class="nav-text">类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB-1"><span class="nav-number">1.3.1.</span> <span class="nav-text">类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E4%B8%AD%E5%B1%9E%E6%80%A7"><span class="nav-number">1.3.2.</span> <span class="nav-text">类中属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3"><span class="nav-number">1.3.3.</span> <span class="nav-text">接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%A9%E5%B1%95"><span class="nav-number">1.3.4.</span> <span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB"><span class="nav-number">1.3.5.</span> <span class="nav-text">数据类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%86%E5%B0%81%E7%B1%BB"><span class="nav-number">1.3.6.</span> <span class="nav-text">密封类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%9B%E5%9E%8B%EF%BC%88%E9%80%9A%E9%85%8D%E7%AC%A6%E4%B8%8D%E6%98%AF%E9%82%A3%E4%B9%88%E5%AE%B9%E6%98%93%E7%90%86%E8%A7%A3%EF%BC%89"><span class="nav-number">1.3.7.</span> <span class="nav-text">泛型（通配符不是那么容易理解）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97%E7%B1%BB"><span class="nav-number">1.3.8.</span> <span class="nav-text">嵌套类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%9A%E4%B8%BE%E7%B1%BB"><span class="nav-number">1.3.9.</span> <span class="nav-text">枚举类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-number">1.3.10.</span> <span class="nav-text">对象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0"><span class="nav-number">1.4.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">1.4.1.</span> <span class="nav-text">函数作用域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9D%9E%E5%B1%80%E9%83%A8%E8%BF%94%E5%9B%9E"><span class="nav-number">1.4.2.</span> <span class="nav-text">非局部返回</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%A8%A1%E7%89%88"><span class="nav-number">1.5.</span> <span class="nav-text">字符串模版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A9%BA%E5%80%BC%E5%92%8Cnull%E6%A3%80%E6%B5%8B"><span class="nav-number">1.6.</span> <span class="nav-text">空值和null检测</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%E4%B8%8E%E8%87%AA%E5%8A%A8%E5%8F%98%E6%8D%A2%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.7.</span> <span class="nav-text">类型检测与自动变换类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%8C%BA%E9%97%B4"><span class="nav-number">1.8.</span> <span class="nav-text">使用区间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number">1.9.</span> <span class="nav-text">集合</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95%E4%B9%A0%E6%83%AF-%E9%80%82%E7%94%A8%E4%BA%8E%E7%AE%80%E5%8C%96%E4%BB%A3%E7%A0%81"><span class="nav-number">2.</span> <span class="nav-text">语法习惯(适用于简化代码)</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
